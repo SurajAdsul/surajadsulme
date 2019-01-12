@@ -5,7 +5,7 @@ if (!function_exists('reading _time')) {
     {
         $word = str_word_count(strip_tags($post));
         $m = floor($word / 200);
-        $est = $m . ' minute' . ($m == 1 ? '' : 's');
+        $est = $m . ' min' . ($m == 1 ? '' : 's') .' read';
         return $est;
     }
 }

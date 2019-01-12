@@ -17,3 +17,4 @@
 
 Route::get('', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@show');
+Route::get('about/me', 'BlogController@aboutme');//->route('aboutme');

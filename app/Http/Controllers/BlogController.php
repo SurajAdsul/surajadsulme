@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Wink\WinkPage;
 use Wink\WinkPost;
 
 class BlogController extends Controller
@@ -12,7 +13,7 @@ class BlogController extends Controller
         $posts = WinkPost::with('tags')
             ->live()
             ->orderBy('publish_date', 'DESC')
-            ->simplePaginate(2);
+            ->simplePaginate(9);
 
         return view('blog.index', [
             'posts' => $posts,
@@ -25,6 +26,15 @@ class BlogController extends Controller
 
         return view('post.index', [
             'post' => $post
+        ]);
+    }
+
+    public function aboutme()
+    {
+        $page = WinkPage::first();
+
+        return view('post.page', [
+            'page' => $page
         ]);
     }
 }
