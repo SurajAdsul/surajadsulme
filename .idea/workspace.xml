@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd287dc-7378-4ce0-9b06-aeb0f2c8ba01" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/post/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/post/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/post/page.blade.php" afterPath="$PROJECT_DIR$/resources/views/post/page.blade.php" />
@@ -32,7 +35,11 @@
         <entry file="file://$PROJECT_DIR$/resources/views/blog/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
+<<<<<<< HEAD
               <caret line="16" column="87" lean-forward="false" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+=======
+              <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="102" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
               <folding />
             </state>
           </provider>
@@ -64,7 +71,11 @@
         <entry file="file://$PROJECT_DIR$/resources/views/post/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
+<<<<<<< HEAD
               <caret line="16" column="87" lean-forward="false" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+=======
+              <caret line="16" column="102" lean-forward="false" selection-start-line="16" selection-start-column="102" selection-end-line="16" selection-end-column="102" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
               <folding />
             </state>
           </provider>
@@ -73,8 +84,13 @@
       <file leaf-file-name="page.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/post/page.blade.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="360">
               <caret line="15" column="87" lean-forward="false" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+=======
+            <state relative-caret-position="288">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
               <folding />
             </state>
           </provider>
@@ -183,6 +199,16 @@
               <item name="surajme" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+=======
+              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="surajme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="surajme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
               <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -224,7 +250,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4847000" />
+=======
+    <option name="totallyTimeSpent" value="5126000" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -453,7 +483,11 @@
     <entry file="file://$PROJECT_DIR$/resources/views/blog/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
+<<<<<<< HEAD
           <caret line="16" column="87" lean-forward="false" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+=======
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="102" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
           <folding />
         </state>
       </provider>
@@ -461,15 +495,24 @@
     <entry file="file://$PROJECT_DIR$/resources/views/post/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
+<<<<<<< HEAD
           <caret line="16" column="87" lean-forward="false" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+=======
+          <caret line="16" column="102" lean-forward="false" selection-start-line="16" selection-start-column="102" selection-end-line="16" selection-end-column="102" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/post/page.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="360">
           <caret line="15" column="87" lean-forward="false" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+=======
+        <state relative-caret-position="288">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+>>>>>>> eda9d81c04c2ede6521bbc1ce977200b13e5e2d2
           <folding />
         </state>
       </provider>
