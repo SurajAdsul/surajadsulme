@@ -14,7 +14,7 @@
 
         <div class="text-grey-darker px-4 m-2">
             <a href="/" class="flex items-center no-underline">
-                <img src="{{ asset('storage/wink/images/0y3IYICQmz1Bsavg0ytgRVXCZ09ahkoS70JQ35X2.jpeg') }}" alt=""
+                <img src="/storage/wink/images/NbwL0c3MIHlI7QJtpFYuTORUskpoxEbHo9nSaaUz.jpeg" alt=""
                      class="h-24 w-24 rounded-full">
             </a>
         </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="flex items-center p-2">
                     <img class="w-10 h-10 rounded-full mr-4"
-                         src="/storage/wink/images/0y3IYICQmz1Bsavg0ytgRVXCZ09ahkoS70JQ35X2.jpeg"
+                         src="/storage/wink/images/NbwL0c3MIHlI7QJtpFYuTORUskpoxEbHo9nSaaUz.jpeg"
                          alt="Avatar of Suraj Adsul">
                     <div class="text-sm">
                         <p class="text-black leading-none">Suraj Adsul</p>
