@@ -14,7 +14,7 @@
 
         <div class="text-grey-darker px-4 m-2">
             <a href="/" class="flex items-center no-underline">
-                <img src="/storage/wink/images/0y3IYICQmz1Bsavg0ytgRVXCZ09ahkoS70JQ35X2.jpeg" alt=""
+                <img src="{{ public_path('wink/images/NbwL0c3MIHlI7QJtpFYuTORUskpoxEbHo9nSaaUz.png')}}" alt=""
                      class="h-24 w-24 rounded-full">
             </a>
         </div>
