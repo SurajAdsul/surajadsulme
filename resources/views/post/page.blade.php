@@ -13,7 +13,7 @@
     <div class="flex flex-row bg-grey-lighter">
         <div class="text-grey-darker px-4 m-2">
             <a href="/" class="flex items-center no-underline">
-                <img src="/storage/wink/images/0y3IYICQmz1Bsavg0ytgRVXCZ09ahkoS70JQ35X2.jpeg" alt=""
+                <img src="/storage/wink/images/NbwL0c3MIHlI7QJtpFYuTORUskpoxEbHo9nSaaUz.jpeg" alt=""
                      class="h-24 w-24 rounded-full">
             </a>
         </div>
