@@ -3,7 +3,7 @@
 @section('content')
     <div class="flex flex-wrap flex-col">
         @foreach($posts as $post)
-            <div class="px-4 py-2 m-2">
+            <div class="px-2 py-2 m-2">
                 <div class="text-black text-left p-2">
                     <h2>
                         <a href="/blog/{{ $post->slug }}"
