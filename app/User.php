@@ -1,30 +1,46 @@
 <?php
 
-namespace App;
+// Inputs
+$n = 1;
+$s = '1B 1C';// '1A 2F 1C';
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+$result = getAvailableSeats($n, $s);
 
-class User extends Authenticatable
+echo $result;
+
+//n - number of rows, s- reserved seats
+function getAvailableSeats($n, $s)
 {
-    use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    $reservedSeats = explode(' ', $s);
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    $available = 0;
+
+    for ($i = 1; $i <= $n; $i++) {
+
+        $flag = true;
+
+        $seatsCombo1        = ["{$i}B", "{$i}C", "{$i}D", "{$i}E"];
+
+        $seatsCombo2        = ["{$i}F", "{$i}G", "{$i}H", "{$i}J"];
+
+        $middleSeatsCombo   = ["{$i}D", "{$i}E", "{$i}F", "{$i}G"];
+
+        if (!count(array_intersect($seatsCombo1, $reservedSeats))) {
+            $flag = false;
+            $available++;
+        }
+
+        if (!count(array_intersect($seatsCombo2, $reservedSeats))) {
+            $flag = false;
+            $available++;
+        }
+
+        if (!count(array_intersect($middleSeatsCombo, $reservedSeats)) && $flag) {
+            $available++;
+        }
+    }
+
+    return $available;
 }
+
