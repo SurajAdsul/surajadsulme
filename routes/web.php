@@ -15,6 +15,9 @@
 //    return view('welcome');
 //});
 
-Route::get('', 'BlogController@index');
+Route::get('', 'BlogController@index')->name('articles');
 Route::get('blog/{slug}', 'BlogController@show');
-Route::get('about/me', 'BlogController@aboutme');//->route('aboutme');
+Route::get('about/me', 'BlogController@aboutme')->name('aboutme');
+Route::get('screencasts', 'BlogController@screencasts')->name('screencasts');
+Route::get('projects', 'BlogController@projects')->name('projects');
+Route::get('journal', 'BlogController@journal')->name('journal');
