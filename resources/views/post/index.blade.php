@@ -32,6 +32,11 @@
             white-space: pre;
             font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
         }
+
+        blockquote{
+            background-color: #ffffc9;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>

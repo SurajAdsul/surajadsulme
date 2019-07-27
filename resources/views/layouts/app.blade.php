@@ -13,6 +13,26 @@
         .block {
             display: block;
         }
+
+        .pin {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .mobile-menu-block{
+            display: block !important;
+        }
+
+        .mobile-menu-hidden{
+            display: none !important;
+        }
+
+        @media (min-width: 768px){
+            .mobile-menu-hidden-res {
+                display: none!important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -50,13 +70,13 @@
                 </div>
             </div>
         </div>
-        <div class="block md:hidden">
-            <button class="hidden" @click="toggleMenu">
-                <svg style="display: block;" :class="menuOpen ? 'hidden' : 'block'" class="block text-black h-6 w-6"
+        <div class="md:hidden">
+            <button class="block" @click="toggleMenu">
+                <svg style="display: block;" :class="menuOpen ? 'mobile-menu-hidden' : 'mobile-menu-block'" class="block text-black h-6 w-6"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                 </svg>
-                <svg style="display: none;" :class="menuOpen ? 'block' : 'hidden'" class="text-black h-6 w-6"
+                <svg style="display: none;" :class="menuOpen ? 'mobile-menu-block' : 'mobile-menu-hidden'" class="text-black h-6 w-6"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
                 </svg>
@@ -65,13 +85,13 @@
     </div>
 
     <!--mobile nav-->
-    <div style="display: none;" :class="menuOpen ? 'block' : 'hidden'" class="md:hidden z-10 bg-white fixed pin pt-24">
+    <div style="display: none; !important;" :class="menuOpen ? 'mobile-menu-block' : 'mobile-menu-hidden'" class="mobile-menu-hidden-res z-10 bg-white fixed pin pt-24">
         <div class="spaced-y-8 overflow-y-auto pt-6 pb-8 px-12 max-h-full overflow-y-auto">
-            <a href="/" class="block text-black font-bold no-underline">Articles</a>
-            <a href="/screencasts" class="block text-black font-bold no-underline">Screencasts</a>
-            <a href="/podcast" class="block text-black font-bold no-underline">Podcast</a>
-            <a href="/projects" class="block text-black font-bold no-underline">Projects</a>
-            <a href="/journal" class="block text-black font-bold no-underline">Journal</a>
+            <a href="/" class="block text-gray-800 font-bold no-underline mb-8">Articles</a>
+            <a href="/about/me" class="block text-gray-800 font-bold no-underline mb-8">About me</a>
+            <a href="/screencasts" class="block text-gray-800 font-bold no-underline mb-8">Screencasts</a>
+            <a href="/projects" class="block text-gray-800 font-bold no-underline mb-8">Projects</a>
+            <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
         </div>
     </div>
 
