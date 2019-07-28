@@ -33,6 +33,10 @@
                 display: none!important;
             }
         }
+
+        button:focus{
+            outline: none !important;
+        }
     </style>
 </head>
 <body>
