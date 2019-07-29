@@ -4,7 +4,7 @@
     <!--Posts section-->
     <div class="lg:pl-32 mt-12">
         <div class="w-full max-w-2xl">
-            <h1 class="text-2xl font-extrabold text-black mb-4">{{ $page->title }}</h1>
+            <h1 class="text-2xl font-extrabold text-black mb-4">Contact me</h1>
             @if ($errors->any())
                 <div class="alert alert-danger text-red-500">
                     <ul>
