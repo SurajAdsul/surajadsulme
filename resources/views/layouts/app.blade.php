@@ -80,6 +80,9 @@
                     <a href="/journal"
                        class="{{ Route::currentRouteNamed('journal') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">
                         Journal</a>
+                    <a href="/contact"
+                       class="{{ Route::currentRouteNamed('contact') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">
+                        contact</a>
                 </div>
             </div>
         </div>

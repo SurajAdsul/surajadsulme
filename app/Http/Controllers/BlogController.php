@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Wink\WinkPage;
 use Wink\WinkPost;
 
@@ -78,5 +80,26 @@ class BlogController extends Controller
         return view('post.page', [
             'page' => $page
         ]);
+    }
+
+    public function contact()
+    {
+        $page = WinkPage::where('slug', 'work')->first();
+
+        return view('contact.contact', [
+            'page' => $page
+        ]);
+    }
+
+    public function sendmail(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|max:60',
+            'email' => 'required|email',
+            'content' => 'required|max:900',
+        ]);
+
+        Mail::send(new ContactMail($request));
+        return redirect('/contact');
     }
 }
