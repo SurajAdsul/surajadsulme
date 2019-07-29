@@ -100,6 +100,6 @@ class BlogController extends Controller
         ]);
 
         Mail::send(new ContactMail($request));
-        return redirect('/contact');
+        return redirect()->back()->withSuccess('Mail sent successfully!');
     }
 }

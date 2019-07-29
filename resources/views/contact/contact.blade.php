@@ -14,6 +14,11 @@
                     </ul>
                 </div>
             @endif
+            @if(session()->has('success'))
+                <div class="alert alert-success text-green-500">
+                    {{ session()->get('success') }}
+                </div>
+            @endif
             <form class="bg-white rounded pt-6 pb-8 mb-4" method="post" action="{{url('/contact')}}">
                 {{csrf_field()}}
                 <div class="mb-4">
