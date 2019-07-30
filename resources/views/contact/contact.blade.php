@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <!--Posts section-->
+
+    <!--Contact section-->
     <div class="lg:pl-32 mt-12">
         <div class="w-full max-w-2xl">
             <h1 class="text-2xl font-extrabold text-black mb-4">Contact me</h1>
+            <p>Hit the contact form if you want to get in touch or appreciate something</p>
             @if ($errors->any())
-                <div class="alert alert-danger text-red-500">
+                <div class="alert alert-danger text-red-500 mt-4">
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
