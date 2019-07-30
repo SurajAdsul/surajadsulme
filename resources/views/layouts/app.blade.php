@@ -108,7 +108,7 @@
             <a href="/screencasts" class="block text-gray-800 font-bold no-underline mb-8">Screencasts</a>
             <a href="/projects" class="block text-gray-800 font-bold no-underline mb-8">Projects</a>
             <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
-            <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
+            <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Contact</a>
         </div>
     </div>
 
