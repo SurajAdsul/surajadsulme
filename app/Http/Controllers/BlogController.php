@@ -58,7 +58,7 @@ class BlogController extends Controller
     {
         $page = WinkPage::where('slug', 'work')->first();
 
-        return view('post.page', [
+        return view('screencasts.screencasts', [
             'page' => $page
         ]);
     }
@@ -66,18 +66,18 @@ class BlogController extends Controller
 
     public function projects()
     {
-        $page = WinkPage::where('slug', 'work')->first();
+        $page = WinkPage::where('slug', 'projects')->first();
 
-        return view('post.page', [
+        return view('projects.projects', [
             'page' => $page
         ]);
     }
 
     public function journal()
     {
-        $page = WinkPage::where('slug', 'work')->first();
+        $page = WinkPage::where('slug', 'journal')->first();
 
-        return view('post.page', [
+        return view('journal.journal', [
             'page' => $page
         ]);
     }

@@ -26,7 +26,7 @@
                             {!! strip_tags(\Illuminate\Support\Str::words($post->body,25)) !!}
                         </p>
                         <div class="text-grey-darkest text-base leading-normal mt-2"><a
-                                    href="/css-utility-classes-and-separation-of-concerns"
+                                    href="/blog/{{ $post->slug }}"
                                     class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
                                 Read this article→</a>
                         </div>
