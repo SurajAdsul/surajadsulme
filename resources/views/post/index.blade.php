@@ -37,6 +37,36 @@
             background-color: #ffffc9;
             padding: 10px;
         }
+
+
+
+        body.dark {
+            background-color: #1e2227;
+            color: #ffffff;
+        }
+        body.dark code[class*=language-],
+        body.dark table tbody>tr:nth-child(odd)>td,
+        body.dark table tbody>tr:nth-child(odd)>th {
+            background: #282c34
+        }
+        body.dark h1{
+            color: #ffffff;
+        }
+        body.dark a{
+            color: #ffffff;
+        }
+        body.dark a:hover{
+            color: #ffffff;
+        }
+        body.dark p{
+            color: #ffffff;
+        }
+        /*body.dark form{*/
+            /*background: #1e2227;*/
+        /*}*/
+        body.dark label{
+            color: #ffffff;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109655284-2"></script>
@@ -78,6 +108,11 @@
         hljs.highlightBlock(block);
     });
     });
+</script>
+<script type="application/javascript">
+    document.addEventListener('DOMContentLoaded', (event) => {
+    ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+    })
 </script>
 </body>
 </html>
