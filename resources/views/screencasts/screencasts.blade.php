@@ -9,7 +9,7 @@
             <div class="text-lg text-grey-100 leading-normal spaced-y-6">
                 <p class="text-grey-100">
                 Hoping to add some screencasts on difficult topics. Honestly it is not my forte because I don't sound very good on video.
-                    But let's see or I'll just delete this section.
+                    Thinking of also adding the links of videos which I liked or I found helpful. Hmm!!
                 </p>
             </div>
             <div class="mt-12 spaced-y-10 mb-10">
