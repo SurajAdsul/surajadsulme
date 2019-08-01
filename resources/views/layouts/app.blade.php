@@ -23,7 +23,6 @@
         .mobile-menu-block{
             display: block !important;
         }
-
         .mobile-menu-hidden{
             display: none !important;
         }
@@ -66,7 +65,13 @@
         body.dark label{
             color: #ffffff;
         }
-
+        body.dark .mobile-menu-block{
+            background-color: #1e2227 !important;
+        }
+        body.dark .mobile-menu-color-block{
+            /*background-color: #fff !important;*/
+            color: #fff;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109655284-2"></script>
@@ -126,11 +131,11 @@
         </div>
         <div class="md:hidden">
             <button class="block" @click="toggleMenu">
-                <svg style="display: block;" :class="menuOpen ? 'mobile-menu-hidden' : 'mobile-menu-block'" class="block text-black h-6 w-6"
+                <svg style="display: block;" :class="menuOpen ? 'mobile-menu-hidden' : 'mobile-menu-block mobile-menu-color-block'" class="block h-6 w-6"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                 </svg>
-                <svg style="display: none;" :class="menuOpen ? 'mobile-menu-block' : 'mobile-menu-hidden'" class="text-black h-6 w-6"
+                <svg style="display: none;" :class="menuOpen ? 'mobile-menu-block mobile-menu-color-block' : 'mobile-menu-hidden'" class="h-6 w-6"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
                 </svg>
@@ -147,6 +152,14 @@
             <a href="/projects" class="block text-gray-800 font-bold no-underline mb-8">Projects</a>
             <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
             <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Contact</a>
+            <a class="block text-gray-800 font-bold no-underline mb-8 cursor-pointer"
+               onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark');
+                    localStorage.getItem('mode') === 'dark'
+                    ? document.querySelector('body').classList.add('dark')
+                    : document.querySelector('body').classList.remove('dark')"
+               title="Dark/light">
+                Dark mode
+            </a>
         </div>
     </div>
 
