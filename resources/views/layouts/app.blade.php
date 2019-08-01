@@ -119,7 +119,7 @@
                        class="{{ Route::currentRouteNamed('contact') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">
                         contact</a>
                     <a class="text-gray-500 font-semibold no-underline hover:text-black mr-6 cursor-pointer"
-                       onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark');
+                       onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light');
                     localStorage.getItem('mode') === 'dark'
                     ? document.querySelector('body').classList.add('dark')
                     : document.querySelector('body').classList.remove('dark')"
@@ -153,7 +153,7 @@
             <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
             <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Contact</a>
             <a class="block text-gray-800 font-bold no-underline mb-8 cursor-pointer"
-               onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark');
+               onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light');
                     localStorage.getItem('mode') === 'dark'
                     ? document.querySelector('body').classList.add('dark')
                     : document.querySelector('body').classList.remove('dark')"
@@ -190,7 +190,7 @@
 
 <script type="application/javascript">
     document.addEventListener('DOMContentLoaded', (event) => {
-    ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+    ((localStorage.getItem('mode') || 'light') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('light')
     })
 </script>
 </body>
