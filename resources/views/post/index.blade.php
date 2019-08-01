@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <style>
         .blog-post-color {
             color: #3d4852;
@@ -37,9 +38,6 @@
             background-color: #ffffc9;
             padding: 10px;
         }
-
-
-
         body.dark {
             background-color: #1e2227;
             color: #ffffff;
@@ -61,11 +59,12 @@
         body.dark p{
             color: #ffffff;
         }
-        /*body.dark form{*/
-            /*background: #1e2227;*/
-        /*}*/
         body.dark label{
             color: #ffffff;
+        }
+
+        .link-light-grey{
+            color: #33333333
         }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -79,8 +78,13 @@
     </script>
 </head>
 <body>
-
+<div class="px-6 pt-8">
+    <a class="link-light-grey" href="/">
+        <i class="fa fa-home fa-4x home-button"></i>
+    </a>
+</div>
 <div id="app" class="py-8 lg:py-16 px-6 max-w-2xl mr-auto ml-auto">
+
     <article>
         <header>
             <h1 class="text-4xl font-bold mb-10 leading-none tracking-tight text-gray-800">
