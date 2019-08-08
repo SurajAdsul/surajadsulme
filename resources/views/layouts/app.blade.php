@@ -20,55 +20,65 @@
             left: 0;
             right: 0;
         }
-        .mobile-menu-block{
+
+        .mobile-menu-block {
             display: block !important;
         }
-        .mobile-menu-hidden{
+
+        .mobile-menu-hidden {
             display: none !important;
         }
 
-        @media (min-width: 768px){
+        @media (min-width: 768px) {
             .mobile-menu-hidden-res {
-                display: none!important;
+                display: none !important;
             }
         }
 
-        button:focus{
+        button:focus {
             outline: none !important;
         }
-
 
         body.dark {
             background-color: #1e2227;
             color: #ffffff;
         }
+
         body.dark code[class*=language-],
-        body.dark table tbody>tr:nth-child(odd)>td,
-        body.dark table tbody>tr:nth-child(odd)>th {
+        body.dark table tbody > tr:nth-child(odd) > td,
+        body.dark table tbody > tr:nth-child(odd) > th {
             background: #282c34
         }
-        body.dark h1{
+
+        body.dark h1 {
             color: #ffffff;
         }
-        body.dark a{
+
+        body.dark a {
             color: #ffffff;
         }
-        body.dark a:hover{
+
+        body.dark a:hover {
             color: #ffffff;
         }
-        body.dark p{
+
+        body.dark p {
             color: #ffffff;
         }
-        body.dark form{
+
+        body.dark form {
             background: #1e2227;
         }
-        body.dark label{
+
+        body.dark label {
             color: #ffffff;
         }
-        body.dark .mobile-menu-block{
+
+        body.dark .mobile-menu-block {
             background-color: #1e2227 !important;
         }
-        body.dark .mobile-menu-color-block{
+
+        body.dark .mobile-menu-color-block {
             /*background-color: #fff !important;*/
             color: #fff;
         }
@@ -77,7 +87,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109655284-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-109655284-2');
@@ -119,23 +133,23 @@
                        class="{{ Route::currentRouteNamed('contact') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">
                         contact</a>
                     <a class="text-gray-500 font-semibold no-underline hover:text-black mr-6 cursor-pointer"
-                       onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light');
-                    localStorage.getItem('mode') === 'dark'
-                    ? document.querySelector('body').classList.add('dark')
-                    : document.querySelector('body').classList.remove('dark')"
-                       title="Dark/light">
-                        Dark mode
+                       title="Dark/light" v-on:click="nightMode">
+                        @{{ mode }}
                     </a>
                 </div>
             </div>
         </div>
         <div class="md:hidden">
             <button class="block" @click="toggleMenu">
-                <svg style="display: block;" :class="menuOpen ? 'mobile-menu-hidden' : 'mobile-menu-block mobile-menu-color-block'" class="block h-6 w-6"
+                <svg style="display: block;"
+                     :class="menuOpen ? 'mobile-menu-hidden' : 'mobile-menu-block mobile-menu-color-block'"
+                     class="block h-6 w-6"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                 </svg>
-                <svg style="display: none;" :class="menuOpen ? 'mobile-menu-block mobile-menu-color-block' : 'mobile-menu-hidden'" class="h-6 w-6"
+                <svg style="display: none;"
+                     :class="menuOpen ? 'mobile-menu-block mobile-menu-color-block' : 'mobile-menu-hidden'"
+                     class="h-6 w-6"
                      fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
                 </svg>
@@ -144,7 +158,8 @@
     </div>
 
     <!--mobile nav-->
-    <div style="display: none; !important;" :class="menuOpen ? 'mobile-menu-block' : 'mobile-menu-hidden'" class="mobile-menu-hidden-res z-10 bg-white fixed pin pt-24">
+    <div style="display: none; !important;" :class="menuOpen ? 'mobile-menu-block' : 'mobile-menu-hidden'"
+         class="mobile-menu-hidden-res z-10 bg-white fixed pin pt-24">
         <div class="spaced-y-8 overflow-y-auto pt-6 pb-8 px-12 max-h-full overflow-y-auto">
             <a href="/" class="block text-gray-800 font-bold no-underline mb-8">Articles</a>
             <a href="/about/me" class="block text-gray-800 font-bold no-underline mb-8">About me</a>
@@ -152,12 +167,7 @@
             <a href="/projects" class="block text-gray-800 font-bold no-underline mb-8">Projects</a>
             <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
             <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Contact</a>
-            <a class="block text-gray-800 font-bold no-underline mb-8 cursor-pointer"
-               onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light');
-                    localStorage.getItem('mode') === 'dark'
-                    ? document.querySelector('body').classList.add('dark')
-                    : document.querySelector('body').classList.remove('dark')"
-               title="Dark/light">
+            <a class="block text-gray-800 font-bold no-underline mb-8 cursor-pointer" title="Dark/light" v-on:click="nightMode">
                 Dark mode
             </a>
         </div>
@@ -169,10 +179,22 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
 <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        if((localStorage.getItem('mode') || 'light') === 'dark')
+        {
+            document.querySelector('body').classList.add('dark')
+        }
+        else
+        {
+            document.querySelector('body').classList.remove('light')
+        }
+    })
+
     new Vue({
         el: '#app',
         data: {
-            menuOpen: false
+            menuOpen: false,
+            mode: localStorage.mode === 'dark' ? 'light mode' : 'dark mode'
         },
         methods: {
             toggleMenu: function () {
@@ -183,14 +205,18 @@
                     this.menuOpen = true
                     document.body.classList.add('scrolling-auto', 'overflow-hidden', 'fixed', 'pin-x')
                 }
+            },
+            nightMode: function (event) {
+                localStorage.mode = (localStorage.mode || 'light') === 'light' ? 'dark' : 'light'
+                if (localStorage.mode === 'dark') {
+                    document.querySelector('body').classList.add('dark')
+                    this.mode = 'light mode'
+                } else {
+                    document.querySelector('body').classList.remove('dark')
+                    this.mode = 'dark mode'
+                }
             }
         }
-    })
-</script>
-
-<script type="application/javascript">
-    document.addEventListener('DOMContentLoaded', (event) => {
-    ((localStorage.getItem('mode') || 'light') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('light')
     })
 </script>
 </body>
