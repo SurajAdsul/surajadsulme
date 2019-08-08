@@ -102,8 +102,6 @@
     <div class="lg:pl-32 mt-12 bg-blue-100">
     </div>
 </div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
 <script>
     //    hljs.initHighlightingOnLoad();
