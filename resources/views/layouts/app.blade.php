@@ -167,7 +167,7 @@
             <a href="/projects" class="block text-gray-800 font-bold no-underline mb-8">Projects</a>
             <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
             <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Contact</a>
-            <a class="block text-gray-800 font-bold no-underline mb-8 cursor-pointer" title="Dark/light" v-on:click="nightMode">
+            <a class="block text-gray-800 font-bold no-underline mb-8 cursor-pointer capitalize" title="Dark/light" v-on:click="nightMode">
                 @{{ mode }}
             </a>
         </div>
