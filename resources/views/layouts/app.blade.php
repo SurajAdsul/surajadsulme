@@ -82,6 +82,18 @@
             /*background-color: #fff !important;*/
             color: #fff;
         }
+
+        body.dark .pagination span{
+            background: #1e2227 !important;
+            border-color: #1e2227 !important;
+            color: #fff !important;
+        }
+
+        body.dark .pagination a{
+            background: #1e2227 !important;
+            border-color: #1e2227 !important;
+            color: #fff !important;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109655284-2"></script>

@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 @endforeach
-
+                    {{ $posts->links() }}
             </div>
 
             {{--<div class="mt-12 text-lg text-grey-darkest leading-normal spaced-y-6">--}}
@@ -45,6 +45,8 @@
             {{--</div>--}}
         </div>
     </div>
+
+    <div class="text-gray-700">
 
 @endsection
 
