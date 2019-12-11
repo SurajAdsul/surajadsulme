@@ -54,14 +54,14 @@ class BlogController extends Controller
         ]);
     }
 
-    public function screencasts()
-    {
-        $page = WinkPage::where('slug', 'work')->first();
-
-        return view('screencasts.screencasts', [
-            'page' => $page
-        ]);
-    }
+//    public function screencasts()
+//    {
+//        $page = WinkPage::where('slug', 'screencast')->first();
+//
+//        return view('screencasts.screencasts', [
+//            'page' => $page
+//        ]);
+//    }
 
 
     public function projects()

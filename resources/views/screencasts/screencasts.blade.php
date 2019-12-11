@@ -27,6 +27,14 @@
 
             </div>
 
+
+
+            <p class="text-grey-100">
+                {!! $page->body !!}
+            </p>
+
+
+
             {{--<div class="mt-12 text-lg text-grey-darkest leading-normal spaced-y-6">--}}
             {{--<p>Read the rest of my articles in--}}
             {{--the <a href="/archives" class="text-black">archives</a>.--}}

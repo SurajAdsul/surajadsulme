@@ -132,9 +132,9 @@
                     <a href="/about/me"
                        class="{{ Route::currentRouteNamed('aboutme') ? 'text-black' : 'text-gray-500' }}  font-semibold no-underline hover:text-black mr-6">
                         About Me</a>
-                    <a href="/screencasts"
-                       class="{{ Route::currentRouteNamed('screencasts') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">
-                        Screencasts</a>
+                    {{--<a href="/screencasts"--}}
+                       {{--class="{{ Route::currentRouteNamed('screencasts') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">--}}
+                        {{--Screencasts</a>--}}
                     <a href="/projects"
                        class="{{ Route::currentRouteNamed('projects') ? 'text-black' : 'text-gray-500' }} font-semibold no-underline hover:text-black mr-6">
                         Projects</a>
