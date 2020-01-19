@@ -175,7 +175,7 @@
         <div class="spaced-y-8 overflow-y-auto pt-6 pb-8 px-12 max-h-full overflow-y-auto">
             <a href="/" class="block text-gray-800 font-bold no-underline mb-8">Articles</a>
             <a href="/about/me" class="block text-gray-800 font-bold no-underline mb-8">About me</a>
-            <a href="/screencasts" class="block text-gray-800 font-bold no-underline mb-8">Screencasts</a>
+            {{--<a href="/screencasts" class="block text-gray-800 font-bold no-underline mb-8">Screencasts</a>--}}
             <a href="/projects" class="block text-gray-800 font-bold no-underline mb-8">Projects</a>
             <a href="/journal" class="block text-gray-800 font-bold no-underline mb-8">Journal</a>
             <a href="/contact" class="block text-gray-800 font-bold no-underline mb-8">Contact</a>
