@@ -18,7 +18,7 @@ var tailwindcss = require('tailwindcss');
 
 mix.sass('resources/sass/app.scss', 'public/css')
     .options({
-        processCssUrls: false,
+        processCssUrls: true,
         postCss: [ tailwindcss('./tailwind.config.js') ],
     })
     .purgeCss();

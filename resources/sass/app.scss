@@ -3,3 +3,55 @@
 @tailwind components;
 
 @tailwind utilities;
+
+
+
+.pagination {
+  justify-content: flex-start;
+  display: flex;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pagination .page-item {
+  display: block;
+}
+
+.pagination .page-item .page-link {
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  color: #000;
+  text-decoration: none;
+  color: #718096;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #f1f5f8;
+}
+
+.pagination .page-item:first-child .page-link {
+  background-color: #edf2f7;
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.pagination .page-item:last-child .page-link {
+  background-color: #edf2f7;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #edf2f7;
+}
+
+.pagination .page-item.disabled .page-link {
+  background-color: #f1f5f8;
+  color: #8795a1;
+}
