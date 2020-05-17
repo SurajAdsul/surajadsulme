@@ -29,9 +29,6 @@
                                 class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
                                 Read this article→</a>
                         </div>
-                        <div class="text-sm">
-                            <p class="text-grey-dark">{{ \Illuminate\Support\Carbon::parse($post->publish_date)->format('M d, Y') }}</p>
-                        </div>
                     </div>
                 @endforeach
             </div>

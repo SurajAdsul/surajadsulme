@@ -77,10 +77,10 @@ class BlogController extends Controller
     {
         $posts = WinkPost::whereHas('tags', function ($query) {
             $query->where('slug', 'journal');
-        })->live()
+            })->live()
             ->orderBy('publish_date', 'DESC')
             ->get();
-
+//dd($posts-);
         return view('journal.journal', [
             'posts' => $posts,
         ]);
