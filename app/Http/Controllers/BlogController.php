@@ -19,7 +19,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $posts = WinkPost::with('tags')
+        $posts = WinkPost::doesntHave('tags')
             ->live()
             ->orderBy('publish_date', 'DESC')
             ->paginate(5);
@@ -75,10 +75,14 @@ class BlogController extends Controller
 
     public function journal()
     {
-        $page = WinkPage::where('slug', 'journal')->first();
+        $posts = WinkPost::whereHas('tags', function ($query) {
+            $query->where('slug', 'journal');
+        })->live()
+            ->orderBy('publish_date', 'DESC')
+            ->get();
 
         return view('journal.journal', [
-            'page' => $page
+            'posts' => $posts,
         ]);
     }
 
@@ -100,7 +104,6 @@ class BlogController extends Controller
             'page' => $page
         ]);
     }
-
 
     public function sendmail(Request $request)
     {
