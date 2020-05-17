@@ -80,7 +80,7 @@ class BlogController extends Controller
             })->live()
             ->orderBy('publish_date', 'DESC')
             ->get();
-//dd($posts-);
+
         return view('journal.journal', [
             'posts' => $posts,
         ]);
