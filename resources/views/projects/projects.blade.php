@@ -8,7 +8,7 @@
             <h1 class="text-2xl font-extrabold text-black mb-4">Projects</h1>
             <div class="text-lg text-grey-100 leading-normal spaced-y-6">
                 <p class="text-grey-100">
-                   These days I'm more focused on my private projects and expanding my horizon in development
+                    These days I'm more focused on my private projects and expanding my horizon in development
                     and hoping something will turn into an amazing product.
                     Also learning the frontend aspects of the programming.
                 </p>
@@ -18,7 +18,9 @@
                 <div class="mb-10">
                     <div>
                         <p class="text-lg text-black font-bold no-underline hover:underline">
-                            Ultralight - microframework
+                            <a href="https://github.com/SurajAdsul/ultralight" target="_blank">
+                                Ultralight - microframework
+                            </a>
                         </p>
                     </div>
                     <p class="blog-post-color text-base leading-normal mt-1">
@@ -26,26 +28,29 @@
                         I always wanted to understand the internal of the framework and I did not found better
                         way rather creating my own micro-framework.
                     </p>
-                    <div class="text-grey-darkest text-base leading-normal mt-2"><a
-                                href="https://github.com/SurajAdsul/ultralight"
-                                class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
-                            Check on github→</a>
+                    <div class="text-grey-darkest text-base leading-normal mt-2">
+                        <a target="_blank" href="https://github.com/SurajAdsul/ultralight"
+                           class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
+                            Check on github→
+                        </a>
                     </div>
                 </div>
 
                 <div class="mb-10">
                     <div>
                         <p class="text-lg text-black font-bold no-underline hover:underline">
-                            Laravel analyser
+                            <a target="_blank" href="https://github.com/SurajAdsul/laravel-analyser"> Laravel
+                                analyser </a>
                         </p>
                     </div>
                     <p class="blog-post-color text-base leading-normal mt-1">
                         Laravel-analyser - A Laravel application to analyse the web pages.
                         I have used Laravel framework to create this application
                     </p>
-                    <div class="text-grey-darkest text-base leading-normal mt-2"><a
-                                href="https://github.com/SurajAdsul/laravel-analyser"
-                                class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
+                    <div class="text-grey-darkest text-base leading-normal mt-2">
+                        <a target="_blank"
+                           href="https://github.com/SurajAdsul/laravel-analyser"
+                           class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
                             Check on github→</a>
                     </div>
                 </div>
@@ -53,7 +58,9 @@
                 <div class="mb-10">
                     <div>
                         <p class="text-lg text-black font-bold no-underline hover:underline">
-                            Appmarket Laravel package
+
+                            <a target="_blank" href="https://github.com/SurajAdsul/appmarket"> Appmarket Laravel
+                                package </a>
                         </p>
                     </div>
                     <p class="blog-post-color text-base leading-normal mt-1">
@@ -61,8 +68,9 @@
                         It extracts images, rating, additional info for the given URL of playstore or appstore
                     </p>
                     <div class="text-grey-darkest text-base leading-normal mt-2"><a
-                                href="https://github.com/SurajAdsul/appmarket"
-                                class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
+                            target="_blank"
+                            href="https://github.com/SurajAdsul/appmarket"
+                            class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
                             Check on github→</a>
                     </div>
                 </div>
@@ -71,7 +79,9 @@
                 <div class="mb-10">
                     <div>
                         <p class="text-lg text-black font-bold no-underline hover:underline">
-                            ChromeExtension
+
+
+                            <a target="_blank" href="https://github.com/SurajAdsul/ultralight"> ChromeExtension</a>
                         </p>
                     </div>
                     <p class="blog-post-color text-base leading-normal mt-1">
@@ -80,8 +90,9 @@
                         It pulls the RSS feeds from my blog and displays.
                     </p>
                     <div class="text-grey-darkest text-base leading-normal mt-2"><a
-                                href="https://github.com/SurajAdsul/ultralight"
-                                class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
+                            target="_blank"
+                            href="https://github.com/SurajAdsul/ultralight"
+                            class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
                             Check on github→</a>
                     </div>
                 </div>
