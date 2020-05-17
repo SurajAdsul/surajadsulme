@@ -22,9 +22,7 @@
                         </a>
                     </div>
                     <p class="blog-post-color text-base leading-normal mt-1">
-                        Ultralight - A simple micro-framework for creating REST API's using symfony components.
-                        I always wanted to understand the internal of the framework and I did not found better
-                        way rather creating my own micro-framework.
+                        I have created this website for checking the covid stats worldwide. This started as experiment for some checking new features and UI design.
                     </p>
                     <div class="text-grey-darkest text-base leading-normal mt-2"><a
                                 href="/projects/covid"
