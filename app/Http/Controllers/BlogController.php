@@ -47,7 +47,7 @@ class BlogController extends Controller
      */
     public function aboutme()
     {
-        $page = WinkPage::first();
+        $page = WinkPage::where('slug', 'aboutme')->first();
 
         return view('post.page', [
             'page' => $page
@@ -90,6 +90,17 @@ class BlogController extends Controller
             'page' => $page
         ]);
     }
+
+
+    public function covid()
+    {
+        $page = WinkPage::where('slug', 'covid')->first();
+
+        return view('projects.details', [
+            'page' => $page
+        ]);
+    }
+
 
     public function sendmail(Request $request)
     {

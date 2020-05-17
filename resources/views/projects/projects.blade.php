@@ -17,6 +17,24 @@
 
                 <div class="mb-10">
                     <div>
+                        <a href="/projects/covid" class="text-lg text-black font-bold no-underline hover:underline">
+                            Covid - pandemic
+                        </a>
+                    </div>
+                    <p class="blog-post-color text-base leading-normal mt-1">
+                        Ultralight - A simple micro-framework for creating REST API's using symfony components.
+                        I always wanted to understand the internal of the framework and I did not found better
+                        way rather creating my own micro-framework.
+                    </p>
+                    <div class="text-grey-darkest text-base leading-normal mt-2"><a
+                                href="/projects/covid"
+                                class="text-gray-800 hover:text-black text-sm no-underline hover:underline">
+                            Check the details→</a>
+                    </div>
+                </div>
+
+                <div class="mb-10">
+                    <div>
                         <p class="text-lg text-black font-bold no-underline hover:underline">
                             <a href="https://github.com/SurajAdsul/ultralight" target="_blank">
                                 Ultralight - microframework
