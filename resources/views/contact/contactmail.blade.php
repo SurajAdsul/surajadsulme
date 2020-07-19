@@ -1,6 +1,5 @@
+{{ $email['email'] }}
 
-{{ $email->email }}
+{{ $email['name'] }}
 
-{{ $email->name }}
-
-{{ $email->content }}
+{{ $email['content'] }}

@@ -19,7 +19,7 @@ class ContactMail extends Mailable
      *
      * @return void
      */
-    public function __construct(Request $request)
+    public function __construct($request)
     {
         $this->email = $request;
     }
@@ -32,7 +32,7 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->subject('Blog email')
-            ->from($this->email->input('email'))
+            ->from($this->email['email'])
             ->to(env('MAIL_USERNAME'))
             ->view('contact.contactmail');
     }

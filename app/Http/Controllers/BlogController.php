@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Wink\WinkPage;
 use Wink\WinkPost;
@@ -107,13 +108,14 @@ class BlogController extends Controller
 
     public function sendmail(Request $request)
     {
+        info($request->all());
         $validatedData = $request->validate([
             'name' => 'required|max:60',
             'email' => 'required|email',
             'content' => 'required|max:900',
         ]);
 
-        Mail::send(new ContactMail($request));
+        Mail::send(new ContactMail($validatedData));
         return redirect()->back()->withSuccess('Mail sent successfully!');
     }
 }
